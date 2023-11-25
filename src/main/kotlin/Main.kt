@@ -1,7 +1,16 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import kotlin.reflect.typeOf
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main(args: Array<String>) {
+    var name = "David NYIRINGABO"
+    println(name)
+    var fl:Float = 23.3f
+    var doub:Double = 23.3
+    val product = fl * doub
+    println(product)
+    println("Enter the first number: ")
+    var num1 = readLine() ?: "0"
+    println("Enter the second number: ")
+    var num2 = readLine() ?: "0"
+    val sum = num1.toInt() + num2.toInt()
+    println("The sum of "+ num1 + " and "+num2+ " is "+ sum)
 }
